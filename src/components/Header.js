@@ -2,11 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './Header.css';
 import { GiSpotedFlower } from 'react-icons/gi';
+import SearchBar from './SearchBar';
 
 const Header = () => {
 
     return(
-        <header>
+        <header className='menu'>
             <nav className='menu_nav'>
                 <ul className='menu_ul'>
                     <li className='menu_li'>
@@ -20,6 +21,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
+            <SearchBar />
         </header>
     )
     

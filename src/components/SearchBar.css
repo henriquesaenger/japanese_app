@@ -1,0 +1,9 @@
+.input-group{
+    height: 30px;
+    width: 70% !important;
+}
+
+.searchbar{
+    align-self: center;
+    width: 30%;
+}

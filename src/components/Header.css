@@ -1,16 +1,25 @@
-.menu_ul{
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-image: linear-gradient(to right, red , #8EA0EE);
+    height: 5vh;
+}
+
+
+
+
+.menu_ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 0;
-    height: 5vh;
     margin-bottom: 0;
 
 }
 
 .menu_li{
-    margin-left: 8%;
+    margin-left: 30px;
     justify-content: center;
     margin-top: 10px;
     list-style: none;
