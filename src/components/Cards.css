@@ -10,10 +10,10 @@
     flex-direction: column;
     height: 250px;
     width: 200px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.45) !important;
     margin:70px;
     border-radius: 20px;
-    box-shadow: 5px 2px 2px gray;
+    box-shadow: 5px 2px 2px #D4D4D4;
     align-items: center;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .card_button{
-    background-color: #523F93;
+    background-color: #41A5F5;
     color: aliceblue;
     font-size: 15px;
     margin: 12px;
@@ -34,7 +34,7 @@
 }
 
 .card_button:hover{
-    box-shadow: 3px 2px 2px #3F316F;
+    box-shadow: 3px 2px 2px #351EE6;
     cursor: pointer;
     transition: box-shadow 0.5s;
 }

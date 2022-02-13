@@ -2,11 +2,14 @@ html,
 body {
   height: 100%;
   margin: 0;
+  
 }
 
 
-.App {
+.App{
   height: 100vh;
+  background-image: url(./japan.jpg);
+  background-size: cover;
 }
 
 .App-logo {
