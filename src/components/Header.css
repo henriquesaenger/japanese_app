@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: linear-gradient(to right, red , #8EA0EE);
+    background: transparent;
     height: 5vh;
 }
 
