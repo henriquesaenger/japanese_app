@@ -1,0 +1,44 @@
+.menu_ul{
+    background-image: linear-gradient(to right, red , #8EA0EE);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+    height: 5vh;
+    margin-bottom: 0;
+
+}
+
+.menu_li{
+    margin-left: 8%;
+    justify-content: center;
+    margin-top: 10px;
+    list-style: none;
+    
+}
+
+.menu_li li{
+    width: 30px;
+}
+
+.menu_link{
+    text-decoration: none;
+    color: antiquewhite;
+    align-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.menu_link:hover {
+    color:#581845;
+    
+    
+    transition: color 0.5s;
+  }
+
+  .icon{
+    color: antiquewhite;
+    align-content: center;
+    font-size: larger;
+    font-weight: bolder;
+  }

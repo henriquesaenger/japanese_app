@@ -1,0 +1,18 @@
+.home{
+    background-image: url(../japan.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    min-height: 95vh;
+    height: 100%;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}

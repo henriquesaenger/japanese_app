@@ -1,0 +1,41 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 2px 2px gray;
+    align-items: center;
+}
+
+.card p{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.card_button{
+    background-color: #523F93;
+    color: aliceblue;
+    font-size: 15px;
+    margin: 12px;
+
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.card_button:hover{
+    box-shadow: 3px 2px 2px #3F316F;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
