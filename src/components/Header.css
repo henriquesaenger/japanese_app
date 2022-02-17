@@ -4,6 +4,7 @@
     justify-content: space-between;
     background: transparent;
     height: 5vh;
+    align-items: center;
 }
 
 
@@ -19,15 +20,15 @@
 }
 
 .menu_li{
-    margin-left: 30px;
+    margin:15px;
     justify-content: center;
-    margin-top: 10px;
     list-style: none;
     
 }
 
 .menu_li li{
     width: 30px;
+    
 }
 
 .menu_link{
@@ -36,10 +37,13 @@
     align-content: center;
     font-size: larger;
     font-weight: bolder;
+    font-size: 24px;
+    background-color: transparent;
+    border:none;
 }
 
 .menu_link:hover {
-    color:#581845;
+    color:#75a1cd;
     
     
     transition: color 0.5s;

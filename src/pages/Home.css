@@ -1,7 +1,5 @@
 .home{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    
     text-align: center;
     min-height: 95vh;
 }
@@ -9,9 +7,27 @@
 
 .home h1{
   margin-bottom: 60px;
+  font-weight: bolder;
+  color: #2a3123;
 }
 
+.barra_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.trophy_div{
+  width:160px;
+  height:200px;
+  background-color: rgb(255, 255, 255, 0.85) !important;
+  border-radius: 20px;
+}
+
+.trophy{
+  height: 85px;
+  width: 50px;
+}
 
 html,
 body {

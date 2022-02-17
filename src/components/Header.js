@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import { GiSpotedFlower } from 'react-icons/gi';
 import SearchBar from './SearchBar';
+import Login from './Login';
+
 
 const Header = () => {
+
 
     return (
         <header className='menu'>
@@ -17,7 +20,7 @@ const Header = () => {
                         <Link to="/About" className='menu_link'><GiSpotedFlower />About</Link>
                     </li>
                     <li className='menu_li'>
-                        <Link to="/Login" className='menu_link'><GiSpotedFlower />Login</Link>
+                        <Login />
                     </li>
                 </ul>
             </nav>

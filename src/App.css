@@ -8,7 +8,7 @@ body {
 
 .App{
   height: 100vh;
-  background-image: url(./japan.jpg);
+  background-image: url(./images/japan.jpg);
   background-size: cover;
 }
 
