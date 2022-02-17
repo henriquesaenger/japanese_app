@@ -1,14 +1,6 @@
 .home{
     
-    text-align: center;
     min-height: 95vh;
-}
-
-
-.home h1{
-  margin-bottom: 60px;
-  font-weight: bolder;
-  color: #2a3123;
 }
 
 .barra_top{
@@ -22,6 +14,7 @@
   height:200px;
   background-color: rgb(255, 255, 255, 0.85) !important;
   border-radius: 20px;
+  text-align: center;
 }
 
 .trophy{

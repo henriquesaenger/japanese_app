@@ -2,11 +2,12 @@ import React from 'react';
 import './Home.css';
 import Cards from "../components/Cards";
 import { GiTrophy } from 'react-icons/gi';
+import Cartaz from "../components/Cartaz";
 
 const Home = () => {
     return(
         <div className='home'>
-            <h1>Seja bem vindo!</h1>
+            <Cartaz />
             <div className='barra_top'>
                 <div className='trophy_div'>
                     <GiTrophy className='trophy' />

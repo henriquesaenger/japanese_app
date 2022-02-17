@@ -1,0 +1,53 @@
+.cartaz{
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 576px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.cartaz_foto{
+    background-image: url(../images/japanese_student.jpg);
+    background-size: cover;
+    width: 65%;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+
+.cartaz_info{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cartaz_info h1{
+    color: #3b4545;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.cartaz_info p{
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.cartaz_info button{
+    border: none;
+    background-color: #41A5F5;
+    color: aliceblue;
+    font-size: 15px;
+    width: fit-content;
+    padding: 8px;
+    align-self: center;
+    border-radius: 10px;
+}
