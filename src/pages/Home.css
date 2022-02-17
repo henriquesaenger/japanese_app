@@ -27,3 +27,14 @@ body {
   height: 100%;
   margin: 0;
 }
+
+@media screen and (max-width: 900px){
+  .barra_top{
+    flex-direction: column;
+  }
+
+  .trophy_div{
+    align-self: center;
+  }
+
+}
