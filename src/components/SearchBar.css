@@ -7,3 +7,10 @@
     align-self: center;
     width: 30%;
 }
+
+@media screen and (max-width: 991px){
+    .searchbar{
+        width: 100%;
+        align-self: center;
+    }
+}

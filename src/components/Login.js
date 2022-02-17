@@ -34,8 +34,7 @@ const Login = () => {
                                     <label className="form-check-label" for="exampleCheck1">Salvar Login</label>
                             </div>
                             <div className='modal_buttons'>
-                                <button variant="secondary" className="btn btn-primary" onClick={handleClose}>Close</button>
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn btn-primary">Entrar</button>
                             </div>
                         </form>
                     </div>
