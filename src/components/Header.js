@@ -23,7 +23,7 @@ const Header = () => {
                             <Link to="/" className='menu_link'><GiSpotedFlower />Home</Link>
                         </li>
                         <li className='menu_li'>
-                            <Link to="/About" className='menu_link'><GiSpotedFlower />About</Link>
+                            <Link to="/about" className='menu_link'><GiSpotedFlower />About</Link>
                         </li>
                         <li className='menu_li'>
                             <Login />
@@ -34,7 +34,7 @@ const Header = () => {
 
             </div>
 
-            <Navbar className='menu_nav_dropdown' expand={false}>
+            <Navbar className='menu_nav_dropdown' variant="dark" expand={false}>
                 <Container fluid>
                     <Navbar.Toggle aria-controls="offcanvasNavbar" />
                     <Navbar.Offcanvas

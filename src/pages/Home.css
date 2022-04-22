@@ -1,12 +1,16 @@
 .home{
     
     min-height: 95vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 }
 
 .barra_top{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: fit-content;
 }
 
 .trophy_div{

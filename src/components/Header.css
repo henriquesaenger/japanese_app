@@ -44,7 +44,7 @@
 }
 
 .menu_link:hover {
-    color:#75a1cd;
+    color:#A80B0B;
     
     
     transition: color 0.5s;
@@ -80,8 +80,8 @@
 
 @media screen and (min-width: 991px){
     
-    nav.menu_nav_dropdown.navbar.navbar-light {
-        display: none;
+    .navbar {
+        display: none !important;
     }
     
 }
@@ -90,6 +90,9 @@
     .menu_link{
         text-align: center;
         color: #0d6efd;
+        align-self: flex-start;
+        padding: 0px;
+        padding: 0.5rem 0rem 1rem;
     }
     .container{
         display: none;
@@ -97,7 +100,12 @@
     .navbar_collapse{
         color: #75a1cd;
     }
-    
+    .navbar{
+        margin-top: 20px;
+    }
+    .button.navbar-toggler.collapsed{
+        border: solid;
+    }
 }
 
 
