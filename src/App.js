@@ -1,6 +1,7 @@
 import React from "react";
 import Home from './pages/Home';
 import About from './pages/About';
+import Cadastro from './pages/Cadastro';
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ export default function App() {
         <Switch>
           <Route exact path="/"><Home /></Route>
           <Route path="/about"><About /></Route>
+          <Route path="/cadastro"><Cadastro /></Route>
         </Switch>
         
       </div>

@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import { GiSpotedFlower } from 'react-icons/gi';
 import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
 import "./Login.css";
 
 
@@ -34,6 +35,7 @@ const Login = () => {
                                     <label className="form-check-label" for="exampleCheck1">Salvar Login</label>
                             </div>
                             <div className='modal_buttons'>
+                                <Link to="/cadastro" className="btn btn-primary">Cadastrar</Link>
                                 <button type="submit" className="btn btn-primary">Entrar</button>
                             </div>
                         </form>
