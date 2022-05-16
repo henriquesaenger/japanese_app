@@ -2,7 +2,15 @@ import { React, useState } from 'react';
 import { GiSpotedFlower } from 'react-icons/gi';
 import Modal from 'react-bootstrap/Modal';
 import { Link } from 'react-router-dom';
-import "./Login.css";
+import styled from 'styled-components';
+
+
+const Modal_buttons= styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+`;
 
 
 const Login = () => {
@@ -21,7 +29,7 @@ const Login = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <div>
-                        <form className="modal_form">
+                        <form className="modal_form" method='POST' action='/login/check'>
                             <div className="form-group">
                                 <label for="username">Username</label>
                                 <input type="text" className="form-control" id="username"  placeholder="Enter your username" />
@@ -34,10 +42,10 @@ const Login = () => {
                                 <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                                     <label className="form-check-label" for="exampleCheck1">Salvar Login</label>
                             </div>
-                            <div className='modal_buttons'>
+                            <Modal_buttons>
                                 <Link to="/cadastro" className="btn btn-primary">Cadastrar</Link>
                                 <button type="submit" className="btn btn-primary">Entrar</button>
-                            </div>
+                            </Modal_buttons>
                         </form>
                     </div>
                 </Modal.Body>

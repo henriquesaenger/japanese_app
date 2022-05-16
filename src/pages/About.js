@@ -1,19 +1,76 @@
 import React from 'react';
-import '../pages/About.css';
 import Header from '../components/Header';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Footer from '../components/Footer';
 import Parametros from '../images/parametros.png';
 import Duracao from '../images/duracao.png';
+import styled from 'styled-components';
+
+const About_container= styled.div`
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+`;
+
+const Container_geral_about= styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+`;
+
+const Container_indice= styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    width: 25%;
+    height: fit-content;
+
+    & li{
+        padding: 7px;
+    }
+
+    & a{
+        text-decoration: none;
+    }
+`;
+
+const Container_texto= styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 8px;
+    width: 65%;
+    margin-bottom: 40px;
+
+
+    & h1{
+        margin: 15px;
+    }
+
+    & p{
+        margin: 30px;
+    }
+
+    & img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+`;
 
 
 
 const About = () => {
     return (
-        <div className='about_container'>
+        <About_container>
             <Header />
-            <div className='container_geral'>
-                <div className='container_indice'>
+            <Container_geral_about>
+                <Container_indice>
                     <ol>
                         <li><AnchorLink href='#sobre'>Sobre a plataforma</AnchorLink></li>
                         <li><AnchorLink href='#prova'>A prova(JLPT)</AnchorLink></li>
@@ -21,8 +78,8 @@ const About = () => {
                         <li><AnchorLink href='#fontes'>Fontes</AnchorLink></li>
                     </ol>
 
-                </div>
-                <div className='container_texto'>
+                </Container_indice>
+                <Container_texto>
                     <div id='sobre'>
                         <h1>Sobre a plataforma</h1>
                         <p>A plataforma Appanese foi criada com o intuito de unir estudantes de japonês pelo Brasil, oferecendo um espaço para memorização de palavras e Kanjis
@@ -65,10 +122,10 @@ const About = () => {
 
                         </p>
                     </div>
-                </div>
-            </div>
+                </Container_texto>
+            </Container_geral_about>
             <Footer />
-        </div>
+        </About_container>
     )
 
 }

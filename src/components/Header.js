@@ -1,10 +1,139 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
 import { GiSpotedFlower } from 'react-icons/gi';
 import SearchBar from './SearchBar';
 import Login from './Login';
 import { Navbar, Nav, Container, Form, FormControl, Button, Offcanvas, NavDropdown, Modal } from 'react-bootstrap';
+import styled from 'styled-components';
+
+
+const Menu= styled.header`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+    height: 5vh;
+    align-items: center;
+    width: 100%;
+
+    & ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    & li{
+        margin:15px;
+        justify-content: center;
+        list-style: none;
+        width: fit-content;
+    }
+
+    & button{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        text-decoration: none;
+        color: antiquewhite;
+        align-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        font-size: 24px;
+        background-color: transparent;
+        border:none;
+    }
+
+    & button:hover{
+        color:#A80B0B;
+        transition: color 0.5s;
+    }
+
+    & a{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        text-decoration: none;
+        color: antiquewhite;
+        align-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        font-size: 24px;
+        background-color: transparent;
+        border:none;
+    }
+
+    & a:hover{
+        color:#A80B0B;
+        transition: color 0.5s;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .menu_nav{
+        width: 100%;
+        
+        justify-content: space-between;
+    }
+    
+    .menu_nav_links{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .menu_link_nav{
+        text-align: center;
+        color: #0d6efd;
+        align-self: flex-start;
+        padding: 0px;
+        padding: 0.5rem 0rem 1rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    @media screen and (min-width: 991px){
+    
+        .navbar {
+            display: none !important;
+        }
+
+        
+        
+    }
+
+    @media screen and (max-width: 991px){
+        .container{
+            display: none;
+        }
+
+        .navbar_collapse{
+            color: #75a1cd;
+        }
+        .navbar{
+            margin-top: 20px;
+        }
+        .button.navbar-toggler.collapsed{
+            border: solid;
+        }
+    }
+
+    
+`;
+
+const Nav_button= styled.button`
+    text-align: center;
+    color: #0d6efd;
+    align-self: flex-start;
+    padding: 0px;
+    padding: 0.5rem 0rem 1rem;
+    border: none;
+    background-color: transparent;
+`;
 
 
 const Header = () => {
@@ -15,7 +144,7 @@ const Header = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <header className='menu'>
+        <Menu>
             <div className='container'>
                 <nav className='menu_nav'>
                     <ul className='menu_ul'>
@@ -46,9 +175,9 @@ const Header = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link to="/" className='menu_link'><GiSpotedFlower />Home</Nav.Link>
-                                <Nav.Link to="/About" className='menu_link'><GiSpotedFlower />About</Nav.Link>
-                                <button className='menu_link' variant="primary" onClick={handleShow}><GiSpotedFlower />Login</button>
+                                <Nav.Link to="/" className='menu_link_nav'><GiSpotedFlower />Home</Nav.Link>
+                                <Nav.Link to="/About" className='menu_link_nav'><GiSpotedFlower />About</Nav.Link>
+                                <Nav_button variant="primary" onClick={handleShow}><GiSpotedFlower />Login</Nav_button>
                                 <Modal show={show} onHide={handleClose}>
                                     <Modal.Header closeButton>
                                         <Modal.Title>Login</Modal.Title>
@@ -83,7 +212,7 @@ const Header = () => {
                 </Container>
             </Navbar>
 
-        </header>
+        </Menu>
 
     )
 
