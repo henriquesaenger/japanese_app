@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 const Cartao= styled.div`
@@ -32,18 +33,20 @@ const Card= styled.div`
     font-weight: bolder;
 }
 
-& button{
+& a{
     background-color: #41A5F5;
     color: aliceblue;
+    text-decoration: none;
     font-size: 15px;
     margin: 12px;
-
+    text-align: center;
     width: 80%;
     height: 40px;
     border-radius: 5px;
+    border: groove;
 }
 
-& button:hover{
+& a:hover{
     box-shadow: 3px 2px 2px #351EE6;
     cursor: pointer;
     transition: box-shadow 0.5s;
@@ -60,9 +63,8 @@ const Cards = () => {
                 {level.map(lev =>
                     <Card>
                         <p>N{lev}</p>
-                        <button className='card_button'>Kanji</button>
-                        <button className='card_button'>Vocabulário</button>
-
+                        <Link to={"N"+lev+"-kanji"} className='card_button'>Kanji</Link>
+                        <Link to={"N"+lev+"-vocabulario"} className='card_button'>Vocabulário</Link>
                     </Card>
                 )
                 }
