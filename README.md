@@ -5,7 +5,7 @@ The kanjis and vocabularies used here come from Tangorin(https://tangorin.com), 
 
 The idea is to make a gamified platform to encourage students on learning in a funny and competitive way, the actual matching game consists in giving the kanji or the vocabulary, along with 4 possible translations, and trying to guess which one is the correct, according with the level selected. The game continues until you want to stop, and when you stop, it gives you the percentage of correct answers you had.
 
-The application was developed with ReactJS, and the data on kanji and vocabulary were fetched from a CSV file downloaded from Tangorin. 
+The application was developed with ReactJS, and the data on kanji and vocabulary were fetched from a CSV file downloaded from Tangorin. The styling was made using Styled Components.
 
 ![Alt text](src/screen_jap.png?raw=true)
 
