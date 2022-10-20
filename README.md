@@ -7,6 +7,8 @@ The idea is to make a gamified platform to encourage students on learning in a f
 
 The application was developed with ReactJS, and the data on kanji and vocabulary were fetched from a CSV file downloaded from Tangorin. 
 
+![Alt text](src/screen_jap.png?raw=true)
+
 The images used on this platform:
 * japanese student at home page: Photo by <a href="https://unsplash.com/@seankkkkkkkkkkkkkk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sean Kong</a> on <a href="https://unsplash.com/s/photos/japanese-student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 * Tokyo sight at background: Photo by <a href="https://unsplash.com/@jlhopes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Edelstein</a> on <a href="https://unsplash.com/s/visual/ebb78e93-12c9-4c4a-aa2b-c262fbeb0475?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
