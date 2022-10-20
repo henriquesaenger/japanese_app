@@ -1,10 +1,24 @@
-# Getting Started with Create React App
+# Appanese
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Appanese is a project to help students to memorize kanji and vocabulary for the Japanese Languege Proficiency Test(JLPT).
+The kanjis and vocabularies used here come from Tangorin(https://tangorin.com), an online japanese dictionary. The content is subdivided in 5 levels of difficulty, according to the same 5 levels of JLPT, being N5 the most basic level, and N1 the proficient one.
 
-## Available Scripts
+The idea is to make a gamified platform to encourage students on learning in a funny and competitive way, the actual game to memorize consists in giving the kanji or the vocabulary, along with 4 possible translations, and trying to guess which one is the correct, according with the level selected. The game continues until you want to stop, and when you stop, it gives you the percentage of correct answers you had.
 
-In the project directory, you can run:
+The application was developed with ReactJS, and the data on kanji and vocabulary were fetched from a CSV file downloaded from Tangorin. 
+
+The images used on this platform:
+* japanese student at home page: Photo by <a href="https://unsplash.com/@seankkkkkkkkkkkkkk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sean Kong</a> on <a href="https://unsplash.com/s/photos/japanese-student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* Tokyo sight at background: Photo by <a href="https://unsplash.com/@jlhopes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Edelstein</a> on <a href="https://unsplash.com/s/visual/ebb78e93-12c9-4c4a-aa2b-c262fbeb0475?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+## To-Do List
+
+- [ ] Create a User System(the Login is still dummy).
+- [ ] Integrate the throphy system to each user, so when you guess 100% correct of a kanji or vocabulary level, you gain a throphy for your accomplishment.
+- [ ] Make the Forum functional(actual forum still with dummy data).
+- [ ] Create a timer for the memorizing game
+- [ ] Make the search bar functional, possibiliting to see every kanji or vocabullary individually.
 
 ### `npm start`
 
@@ -14,57 +28,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
