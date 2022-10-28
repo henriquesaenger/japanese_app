@@ -12,6 +12,8 @@ The application was developed with ReactJS, and the data on kanji and vocabulary
 The images used on this platform:
 * japanese student at home page: Photo by <a href="https://unsplash.com/@seankkkkkkkkkkkkkk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sean Kong</a> on <a href="https://unsplash.com/s/photos/japanese-student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 * Tokyo sight at background: Photo by <a href="https://unsplash.com/@jlhopes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Edelstein</a> on <a href="https://unsplash.com/s/visual/ebb78e93-12c9-4c4a-aa2b-c262fbeb0475?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* card sakura image: Photo by <a href="https://unsplash.com/@gaspanik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Masaaki Komori</a> on <a href="https://unsplash.com/s/photos/sakura-card?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
   
 
 ## To-Do List
