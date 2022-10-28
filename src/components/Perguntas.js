@@ -19,7 +19,8 @@ const Container_comecar= styled.div`
     display: flex;
     flex-direction: column;
     width: 75%;
-    height: 500px;
+    height: fit-content;
+    margin: 40px;
     border-radius: 18px;
     box-shadow: 5px 2px 2px #D4D4D4;
     background-color: #41A5F5;
@@ -43,6 +44,7 @@ const Container_comecar= styled.div`
         color: white;
         align-self: center;
         font-weight: bolder;
+        margin-bottom: 15px;
     }
 
     & button:hover{
@@ -58,6 +60,7 @@ const Quadro= styled.div`
     flex-direction: column;
     width: 75%;
     height: fit-content;
+    margin: 40px;
     border-radius: 18px;
     box-shadow: 5px 2px 2px #D4D4D4;
     background-color: #41A5F5;
@@ -297,7 +300,7 @@ const Perguntas = (props) =>{
                     Swal.fire({
                         icon: 'success',
                         title: 'Resultado',
-                        text: "Você acertou "+ (Number.isNaN(score/total) ? "0" : (score/total)*100)  + "% das perguntas!!!"
+                        text: "Você acertou "+ (Number.isNaN(score/total) ? "0" : (score/total)*100).toFixed(2)  + "% das perguntas!!!"
                       }).then((result) => {
                         if (result.isConfirmed) {
                             history.go(0);

@@ -1,8 +1,9 @@
-import { React, useState } from 'react';
+import { React, useContext, useState } from 'react';
 import { GiSpotedFlower } from 'react-icons/gi';
 import Modal from 'react-bootstrap/Modal';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Info_login_Provider from '../contexto/Info_login_Provider';
 
 
 const Modal_buttons= styled.div`
@@ -19,6 +20,14 @@ const Login = () => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const login_ctx= useContext(Info_login_Provider);
+
+
+    const onLogin= () => {
+        login_ctx.loginHandler();
+        window.location.reload();
+    }
 
     return (
         <div>
@@ -44,7 +53,7 @@ const Login = () => {
                             </div>
                             <Modal_buttons>
                                 <Link to="/cadastro" className="btn btn-primary">Cadastrar</Link>
-                                <button type="submit" className="btn btn-primary">Entrar</button>
+                                <button type="submit" onClick={onLogin} className="btn btn-primary">Entrar</button>
                             </Modal_buttons>
                         </form>
                     </div>

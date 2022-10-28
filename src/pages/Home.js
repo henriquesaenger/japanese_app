@@ -65,6 +65,11 @@ const Barra_info= styled.div`
     .caixa_notificacoes{
         width: 40%;
     }
+
+    @media screen and (max-width: 900px){
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const Home = () => {

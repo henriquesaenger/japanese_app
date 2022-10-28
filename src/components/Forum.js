@@ -64,6 +64,7 @@ const Corpo= styled.div`
 
     & p{
         width: 90%;
+        margin-right: 20px;
     }
 `;
 

@@ -1,0 +1,83 @@
+
+
+
+.cartao{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.Flip_card{
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    width: 130px;
+    background-color: transparent;
+    border-radius: 20px;
+    align-items: center;
+    margin: 20px;
+}
+
+.Inner_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    display: flex;
+
+}
+
+.Flip_card:hover .Inner_card {
+    transform: rotateY(180deg);
+  }
+
+
+.Flip_card_front, .Flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.Flip_card_back{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/sakura.jpg");
+    background-repeat: round;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    
+}
+
+.Flip_card_back a{
+    background-color: #41A5F5;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 12px;
+    text-align: center;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: groove;
+}
+
+.Flip_card_front {
+    background-image: url("../images/sakura.jpg");
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: round;
+    border-radius: 15px;
+  }

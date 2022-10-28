@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { GiSpotedFlower } from 'react-icons/gi';
 import SearchBar from './SearchBar';
 import Login from './Login';
 import { Navbar, Nav, Container, Form, FormControl, Button, Offcanvas, NavDropdown, Modal } from 'react-bootstrap';
 import styled from 'styled-components';
+import Info_login from '../contexto/Info_login_Provider';
 
 
 const Menu= styled.header`
@@ -143,25 +144,51 @@ const Header = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const login_ctx= useContext(Info_login);
+
+
+    
+
     return (
         <Menu>
-            <div className='container'>
-                <nav className='menu_nav'>
-                    <ul className='menu_ul'>
-                        <li className='menu_li'>
-                            <Link to="/" className='menu_link'><GiSpotedFlower />Home</Link>
-                        </li>
-                        <li className='menu_li'>
-                            <Link to="/about" className='menu_link'><GiSpotedFlower />About</Link>
-                        </li>
-                        <li className='menu_li'>
-                            <Login />
-                        </li>
-                    </ul>
-                </nav>
-                <SearchBar />
+            {/* {login_ctx.isLogged ? ( */}
+                <div className='container'>
+                    <nav className='menu_nav'>
+                        <ul className='menu_ul'>
+                            <li className='menu_li'>
+                                <Link to="/" className='menu_link'><GiSpotedFlower />Home</Link>
+                            </li>
+                            <li className='menu_li'>
+                                <Link to="/about" className='menu_link'><GiSpotedFlower />About</Link>
+                            </li>
+                            <li className='menu_li'>
+                                {/* <button onClick={login_ctx.logout}>Logout</button> */}
+                            </li>
+                        </ul>
+                    </nav>
+                    <SearchBar />
 
-            </div>
+                </div>
+                    {/* ):(
+                        <div className='container'>
+                            <nav className='menu_nav'>
+                                <ul className='menu_ul'>
+                                    <li className='menu_li'>
+                                        <Link to="/" className='menu_link'><GiSpotedFlower />Home</Link>
+                                    </li>
+                                    <li className='menu_li'>
+                                        <Link to="/about" className='menu_link'><GiSpotedFlower />About</Link>
+                                    </li>
+                                    <li className='menu_li'>
+                                        <Login />
+                                    </li>
+                                </ul>
+                            </nav>
+                            <SearchBar />
+
+                        </div>
+                    )}
+             */}
 
             <Navbar className='menu_nav_dropdown' variant="dark" expand={false}>
                 <Container fluid>

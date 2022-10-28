@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Home from './pages/Home';
 import About from './pages/About';
 import Cadastro from './pages/Cadastro';
@@ -12,6 +12,7 @@ import N4kanji from './pages/N4kanji';
 import N3kanji from './pages/N3kanji';
 import N2kanji from './pages/N2kanji';
 import N1kanji from './pages/N1kanji';
+import Login from './contexto/Info_login_Provider';
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -22,8 +23,11 @@ import {
 
 
 export default function App() {
+  
+
   return (
     <Router>
+      <Login>
       <div className="App">
         <Switch>
           <Route exact path="/"><Home /></Route>
@@ -43,6 +47,7 @@ export default function App() {
         </Switch>
         
       </div>
+      </Login>
     </Router>
   );
 }
